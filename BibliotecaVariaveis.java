@@ -1,7 +1,7 @@
 public class BibliotecaVariaveis{
 
     // Atributos
-    private boolean[]definida;
+    private boolean[]inicializada;
     private double[]valor;
 
     // Construtor: Define os Vetores de Atributos com Tamanho 26 (A a Z)
@@ -28,13 +28,13 @@ public class BibliotecaVariaveis{
     }
     // Verifica se a Variável foi Inicializada
     public boolean isInicializada(char letra){
-        int indice = Character.toUpperCase() - 'A'; // Obtém o Índice da Letra
+        int indice = Character.toUpperCase(letra) - 'A'; // Obtém o Índice da Letra
         return inicializada[indice];
     }
 
     // Obtém o Valor Definido da Variável
     public double getValor(char letra){
-        int indice = Character.toUpperCase() - 'A' // Obtém o Índice da Letra
+        int indice = Character.toUpperCase(letra) - 'A'; // Obtém o Índice da Letra
         return valor[indice];
     }
 
@@ -46,7 +46,7 @@ public class BibliotecaVariaveis{
             if(inicializada[i]){
                 nenhuma = false; // Há Pelo menos uma Variável que foi Inicializada
             }
-            System.out.printf("%c = %f\n", (((char)'A'+ i),valor[i]));
+            System.out.printf("%c = %f\n", (char)('A' + i), valor[i]);
         }
 
         if(nenhuma){ // Se Nenhuma Variável foi Inicializada
