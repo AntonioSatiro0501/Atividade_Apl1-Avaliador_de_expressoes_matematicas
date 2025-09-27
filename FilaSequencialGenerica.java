@@ -1,3 +1,16 @@
+/*
+-------------------------------
+Nome: Aline Barbosa Vidal
+RA: 10721348
+-------------------------------
+Nome: Antônio Costa Satiro de Souza
+RA: 10723636
+-------------------------------
+Nome: Fabyani Tiva Yan
+RA: 10431835
+-------------------------------
+*/
+
 public class FilaSequencialGenerica <T> {
 
     // atributos
