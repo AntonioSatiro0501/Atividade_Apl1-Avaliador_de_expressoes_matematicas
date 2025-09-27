@@ -8,7 +8,7 @@ private char[] variaveis;
 // construtor
 public CalculadoraPosfixa() {
     biblioteca = new BibliotecaVariaveis();
-    operacoes = new char[]{'+', '-', '*', '^', '/', '%'};
+    operacoes = new char[]{'+', '-', '*', '^', '/'};
     variaveis = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 }
 
@@ -186,7 +186,6 @@ public int prioridade(char c){
         case '-': return 1;
         case '/': return 2;
         case '*': return 2;
-        case '%': return 2;
         case '^': return 3;
         default: return 0;
     }
