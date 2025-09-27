@@ -173,8 +173,8 @@ public String variavelNaoDefinida(char letra){
 // checa se o caracter esta presente na lista
 public boolean estaPresente(char c, char[] lista){
 
-    for(char op : lista){
-        if (op == c) {
+    for(char varre : lista){
+        if (varre == c) {
             return true;
         }
     }
@@ -193,22 +193,5 @@ public int prioridade(char c){
         default: return 0;
     }
 }
-
-public static void main(String[] args) {
-    try {
-        CalculadoraPosfixa calc = new CalculadoraPosfixa();
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("Digite expressão:");
-        String entrada = scan.nextLine();
-
-        System.out.print(calc.defineValor(entrada));
-
-        scan.close();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-}
-
 
 }
