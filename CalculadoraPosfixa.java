@@ -11,6 +11,7 @@ RA: 10431835
 -------------------------------
 */
 //referencia: https://panda.ime.usp.br/algoritmos/static/eps/ep6/parted/parted-polonesa.html
+//referencia: https://www.w3schools.com/java/ref_string_replaceall.asp
 
 public class CalculadoraPosfixa {
 
