@@ -208,7 +208,7 @@ public int prioridade(char c){
 }
 
 //lista variáveis usando a biblioteca
-public void vars() {
+public void vars() { 
     biblioteca.mostraVariaveis();
 }
 

@@ -22,10 +22,10 @@ public class Main {
         if(linha.isEmpty()) return true;
 
         //comando vars
-        if (linha.equalsIgnoreCase("VARS")) { 
-            calc.vars(); 
-            return true; 
-        }
+     if (linha.equalsIgnoreCase("VARS")) { 
+      calc.vars(); 
+      return true; 
+}
 
         //comando reset
         if (linha.equalsIgnoreCase("RESET")) { 

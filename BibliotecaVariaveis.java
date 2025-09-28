@@ -52,18 +52,24 @@ public class BibliotecaVariaveis{
     }
 
     // Mostra Todas as Variáveis Definidas Para o Usuário
-    public void mostraVariaveis(){
-        boolean nenhuma = true; // Inicialmente, Supõe-se que Nenhuma Variável foi Definida
+public void mostraVariaveis(){
+    boolean nenhuma = true; // inicialmente, supõe-se que nenhuma variável foi definida
 
-        for(int i = 0; i < 26; i++){
-            if(inicializada[i]){
-                nenhuma = false; // Há Pelo menos uma Variável que foi Inicializada
+    for(int i = 0; i < 26; i++){
+        if(inicializada[i]){
+            nenhuma = false; // há pelo menos uma variável inicializada
+            double v = valor[i];
+            //imprime como inteiro se não houver parte fracionária
+            if (v == Math.rint(v)) {
+                System.out.printf("%c = %d%n", (char)('A' + i), (long)v);
+            } else {
+                System.out.printf("%c = %s%n", (char)('A' + i), String.valueOf(v));
             }
-            System.out.printf("%c = %f\n", (char)('A' + i), valor[i]);
-        }
-
-        if(nenhuma){ // Se Nenhuma Variável foi Inicializada
-            System.out.println("Nenhuma Variável Definida"); // Exibe a Mensagem ao Usuário
         }
     }
+
+    if(nenhuma){ // se nenhuma variável foi inicializada
+        System.out.println("Nenhuma variável definida.");
+    }
+}
 }
