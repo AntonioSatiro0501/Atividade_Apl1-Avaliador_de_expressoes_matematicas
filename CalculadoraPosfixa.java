@@ -10,6 +10,7 @@ Nome: Fabyani Tiva Yan
 RA: 10431835
 -------------------------------
 */
+//referencia: https://panda.ime.usp.br/algoritmos/static/eps/ep6/parted/parted-polonesa.html
 
 public class CalculadoraPosfixa {
 
@@ -276,4 +277,3 @@ public Double calcular(String infixa) throws Exception{
 
 }
 
-//referencia: https://panda.ime.usp.br/algoritmos/static/eps/ep6/parted/parted-polonesa.html
